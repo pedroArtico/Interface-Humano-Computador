@@ -1,0 +1,711 @@
+<!DOCTYPE html><html lang="br"><head>    <meta charset="UTF-8">    <title>Title</title>    <style>        *{            font-family: "Open Sans", Calibri, SansSerif, sans-serif;        }        p{            text-align: justify;        }        img{            border: solid 1px #000000;            display: block;            margin-left: auto;            margin-right: auto;            width: 90%;        }    </style></head><body>
+<h1>Serviços Acadêmicos</h1>
+
+<h2><em>id:[SRVACAD_ANDR_11]</em> Problema 11: Nome do sistema muda de acordo com a página.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; No caminho de login em "Serviços Acadêmicos".</em></p>
+
+<p>Em cada etapa do login um título diferente com um formato diferente é colocado na tela, primeiramente "Serviços Acadêmicos", depois "Sistema de Senha Única e Permissões" (nesse ponto o usuário já pode estar confuso pois esperava entrar num sistema de serviços acadêmicos e não de senhas, mas pode ser que interprete que é uma etapa passar pelo sistema de login) por fim "Sistemas Acadêmicos - Serviços". 
+É fácil para um usuário se confundir sem saber se está acessando o sistema correto.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1jF7Y9DWpc0sfd_j7eKve5GTn1pnrWws3.png" alt="https://drive.google.com/open?id=1jF7Y9DWpc0sfd_j7eKve5GTn1pnrWws3" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1Zwcqm1rAxFjqecFKxbEQZQckt8PyD2FS.png" alt="https://drive.google.com/open?id=1Zwcqm1rAxFjqecFKxbEQZQckt8PyD2FS" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1Sx6XGLruaMqrZjIx5BBWimDaBEGhf2zg.png" alt="https://drive.google.com/open?id=1Sx6XGLruaMqrZjIx5BBWimDaBEGhf2zg" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: O sistema não tem consistência, a cada passo do acesso o usuário passa por um sistema com nome diferente e design diferente.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_12]</em> Problema 12: Caracteres especiais.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao tentar fazer login em "Serviços Acadêmicos."</em></p>
+
+<p>O sistema em questão tem problemas em diferenciar um caractere emoji em unicode da sua representação em html, assim, deveria impedir que os mesmos fossem inseridos, ao tentar fazer login usando esses caracteres um erro é gerado.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1J0TJ0ISI_mU8iuwaPUr9LdL6IaFTy0i7.png" alt="https://drive.google.com/open?id=1J0TJ0ISI_mU8iuwaPUr9LdL6IaFTy0i7" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1yWNM-QZ2JIBH5AHceMAYajORZnGowHK3.png" alt="https://drive.google.com/open?id=1yWNM-QZ2JIBH5AHceMAYajORZnGowHK3" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 5ª</h3>
+
+<p><strong>Heurística ferida</strong>: 5 - Prevenção de erro</p>
+
+<p><strong>Justificativa</strong>: O sistema não evita que o usuário cometa erros permitindo que insira caracteres especiais nos campos de login.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_13]</em> Problema 13: Erro com termos técnicos e sem ajuda.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Quando um erro no login ocorre na página.</em></p>
+
+<p>Ao tentar fazer login na página usando caracteres especiais a página gera um erro com termos técnicos, detalhes de programação sem indicar de fato o que ocorreu de errado.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1O5qlu588YZ35NPu_6Y5LH5q-PQCSQQPL.png" alt="https://drive.google.com/open?id=1O5qlu588YZ35NPu_6Y5LH5q-PQCSQQPL" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 9ª</h3>
+
+<p><strong>Heurística ferida</strong>: 9 - Auxiliar usuários a reconhecer, diagnosticar e recuperar ações erradas</p>
+
+<p><strong>Justificativa</strong>: A mensagem de erro não é clara pois não diz o que ocorreu de errado usa termos técnicos e mostra detalhes da programação do sistema. Nenhuma solução é sugerida.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 5 - Catastrófico (Muito grave, deve ser reparado de qualquer forma -)</p>
+
+<h2><em>id:[SRVACAD_ANDR_14]</em> Problema 14: Botão "Sair" ambíguo.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao clicar em "Sair" quando um erro de login ocorre.</em></p>
+
+<p>O usuário é posto em dúvida se o botão "Sair" se refere a "sair desta tela de erro" ou "sair do sistema". Ele fecha o sistema o que faz com que o usuário tenha que procurar e abrir novamente a página do sistema.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1IRR-o1Wx3CqAhhINI9znbmtK5CUocJ3b.png" alt="https://drive.google.com/open?id=1IRR-o1Wx3CqAhhINI9znbmtK5CUocJ3b" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: Se houve um erro no sistema de login o usuário irá pensar em tentar fazer o login novamente, não em fechar o sistema. Em outros sistemas quando uma mensagem de erro aparece um botão "Sair" normalmente se refere a fechar a página de erro e não fechar o sistema como um todo.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_15]</em> Problema 15: Falha de segurança ao usar navegador.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Após o login.</em></p>
+
+<p>Ao fazer o login no sistema é mostrada uma mensagem dizendo que dependendo do navegador utilizado e de sua versão o usuário corre riscos relacionados com a segurança. 
+No caso o teste foi feito num navegador fora da lista e a ferramenta funcionou normalmente, aparentemente é aceitável que os usuários do sistema corram riscos de segurança.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_12aySqRu-gGf9jVow_c7lnUWr2rf-3jZ6.png" alt="https://drive.google.com/open?id=12aySqRu-gGf9jVow_c7lnUWr2rf-3jZ6" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: O sistema funciona normalmente em um navegador que não é recomendado, é dito que são problemas de segurança - mas a mensagem é mostrada após o usuário inserir seus dados em um navegador dito inseguro e fazer o login. 
+Isso pode causar medo em alguns usuários ou dúvidas se precisam ou não utilizar os navegadores ditos já que o sistema funciona normalmente em um outro navegador.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_16]</em> Problema 16: Mensagens conflitantes.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao ir para a página de baixar os navegadores recomendados.</em></p>
+
+<p>Ao fazer o login no sistema é mostrada uma mensagem dizendo que dependendo do navegador utilizado e de sua versão o usuário corre riscos relacionados com a segurança. 
+Existe um link para uma página de download dos navegadores recomendados, nela uma mensagem de aviso semelhante aparece mas com mais navegadores e em outras versões.
+O usuário não tem como saber em qual mensagem deve confiar.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1q9dWQ_rn0YC5OdyVPX15_N9ftelwoDRa.png" alt="https://drive.google.com/open?id=1q9dWQ<em>rn0YC5OdyVPX15</em>N9ftelwoDRa" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1-pNuMicD3mHIe9kQttEAvD3PSvYlOF5c.png" alt="https://drive.google.com/open?id=1-pNuMicD3mHIe9kQttEAvD3PSvYlOF5c" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: O sistema está inconsistente pois existem duas mensagens para a solução do mesmo problema com soluções diferentes.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_18]</em> Problema 18: Falta de informação ao baixar navegadores.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Baixar navegadores recomendados.</em></p>
+
+<p>Na página de baixar os navegadores recomendados é dado apenas o link para o arquivo instalador na maior parte dos casos. Usuários mais leigos com bastante certeza se sentiriam mais seguros se tivessem acesso aos tutoriais de instalação e acesso ao site da empresa que desenvolveu o navegador.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1K4MinxD3_9HyYaumhFpGV8gR5pmIeavn.png" alt="https://drive.google.com/open?id=1K4MinxD3_9HyYaumhFpGV8gR5pmIeavn" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: Usuários leigos podem ter dificuldades com a instalação e conhecimento do software que irão instalar em seus computadores. O usuário acaba perdendo controle nesse caso.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_19]</em> Problema 19: Funções estão em outro sistema.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Após fazer o login na ferramenta.</em></p>
+
+<p>É exibida uma mensagem dizendo que para fazer certas alterações de dados existe um novo sistema. Não é esclarecido se tais funções continuam no sistema atual, além disso, essa mensagem poderia aparecer antes do usuário efetuar o login já que ele é obrigado a se autenticar para então descobrir que terá que sair do sistema para acessar outro.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1BG4NLRn1rOMCM_WPBJk8NODpo_7tjxb-.png" alt="https://drive.google.com/open?id=1BG4NLRn1rOMCM<em>WPBJk8NODpo</em>7tjxb-" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: Não existe lógica nas ações ao requerer que um usuário já tenha feito o login para mostrar que as opções que quer podem não estar mais no portal que ele conhece.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_20]</em> Problema 20: Opções de pós-graduação para aluno da graduação apenas.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Pós-graduação.</em></p>
+
+<p>Mesmo logado como aluno que cursa apenas Graduação o sistema mostra botões clicáveis indicando que poderia acessar opções que não correspondem com o perfil do usuário. .</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_146lb6TTR3bVI6MXscRo-dalH5rqIRbhv.png" alt="https://drive.google.com/open?id=146lb6TTR3bVI6MXscRo-dalH5rqIRbhv" /></p>
+
+<h2>Comentários</h2>
+
+<p>Poderia haver uma divisão melhor das seções e apenas a parte importante para o usuário deve aparecer.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 5ª</h3>
+
+<p><strong>Heurística ferida</strong>: 5 - Prevenção de erro</p>
+
+<p><strong>Justificativa</strong>: Visto que ao escolher uma opção que não corresponde com o perfil do usuário um erros são gerados, o fato dessas opções estarem disponíveis mesmo com o conhecimento prévio de que os erros acontecerão caracteriza o problema em tal heurística.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_21]</em> Problema 21: Muitos botões com e sem funcionalidade juntos.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Tela de usuário logado.</em></p>
+
+<p>Mesmo logado como aluno que cursa apenas Graduação o sistema mostra botões clicáveis indicando que poderia acessar opções que não correspondem com o perfil do usuário. .</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1-ORpeSVpGpnf_UJs3vreIP4XaIs90gzx.png" alt="https://drive.google.com/open?id=1-ORpeSVpGpnf_UJs3vreIP4XaIs90gzx" /></p>
+
+<p><img src="../../imgs/ANDRÉ_135eeXsTY7RnnDcQsbGJJTJM_e6rzrlA8.png" alt="https://drive.google.com/open?id=135eeXsTY7RnnDcQsbGJJTJM_e6rzrlA8" /></p>
+
+<h2>Comentários</h2>
+
+<p>Seria melhor que o sistema mostrasse aos usuários que são só da graduação ou só da pós graduação seus respectivos menus e marcar botões que levam a opções que não estão disponíveis no momento como não clicáveis.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: O sistema mostra uma seção inteira sem necessidade e em alguns casos botões para opções que não estão disponíveis no momento.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_22]</em> Problema 22: Página indisponível.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Desistência de Matrícula em Disciplinas.</em></p>
+
+<p>Ao acessar "Desistência de Matrícula em Disciplinas" é mostrada uma mensagem dizendo que a opção está indisponível, isso poderia estar marcado já no botão.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1dvSmVvpdU0VWPdF6spVmaiXbDb1u3uV7.png" alt="https://drive.google.com/open?id=1dvSmVvpdU0VWPdF6spVmaiXbDb1u3uV7" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1KL9H4iiU2zyed2ufSjTaNHCwA4rt5m3x.png" alt="https://drive.google.com/open?id=1KL9H4iiU2zyed2ufSjTaNHCwA4rt5m3x" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: O usuário perde liberdade ao acessar uma função indisponível que é mostrada como se estivesse disponível.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_23]</em> Problema 23: Botão "Sair" ambíguo.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Desistência de Matrícula em Disciplinas.</em></p>
+
+<p>A mensagem exibida não tem um botão "Voltar", apenas um botão "Sair" que é mais facilmente interpretado como "Sair desta mensagem e voltar ao menu principal" do que "Sair do sistema". O botão fecha o sistema.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1lcDACS32yRRkIIeorOuUT5hZ2me3VY78.png" alt="https://drive.google.com/open?id=1lcDACS32yRRkIIeorOuUT5hZ2me3VY78" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1zgjoN8jt_URazkOIHFK3x1AjY_Rl638I.png" alt="https://drive.google.com/open?id=1zgjoN8jt<em>URazkOIHFK3x1AjY</em>Rl638I" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: Ao entrar em tal opção o botão sair não ajuda o usuário a retornar ao menu que queria, tirando sua liberdade.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_24]</em> Problema 24: Falta de botão "Voltar" em página de erro.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Desistência de Matrícula em Disciplinas.</em></p>
+
+<p>O sistema apresenta apenas um botão "Sair" e não um botão "Voltar".</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1wcIF_CpKgRva2V0PbZakyRa3wnB_pwEq.png" alt="https://drive.google.com/open?id=1wcIF<em>CpKgRva2V0PbZakyRa3wnB</em>pwEq" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: A falta do botão tira a liberdade do usuário ao utilizar o portal.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_25]</em> Problema 25: Falta de link para o calendário.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Desistência de Matrícula em Disciplinas.</em></p>
+
+<p>Ao acessar a página "Desistência de Matrícula" em Disciplinas a mensagem diz ao usuário que consulte o calendário da DAC, sem dizer como fazer isso ou sequer o que é o calendário da DAC (Caso seja a primeira vez que o usuário acessa tal sistema).</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1QNCXhDEq1W2QJQLhgGRLH7lYE2jY1V7Q.png" alt="https://drive.google.com/open?id=1QNCXhDEq1W2QJQLhgGRLH7lYE2jY1V7Q" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1c2k_FXruDnTSVuN0ivzIe6nESt1L5W2r.png" alt="https://drive.google.com/open?id=1c2k_FXruDnTSVuN0ivzIe6nESt1L5W2r" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 7ª</h3>
+
+<p><strong>Heurística ferida</strong>: 7 - Flexibilidade e eficiência de uso</p>
+
+<p><strong>Justificativa</strong>: O usuário perde eficiência pois para consultar o calendário da DAC terá que ir por um caminho que a princípio é desconhecido já que a mensagem não o auxilia a fazer tal operação.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_26]</em> Problema 26: Falta de botão "Voltar".</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Desistência de Matrícula em Disciplinas.</em></p>
+
+<p>O site apresenta apenas um botão que fecha o sistema, falta um botão para voltar ao menu anterior.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1EA0vO73r_KLWr_enHSYPtIOms_6SbK0P.png" alt="https://drive.google.com/open?id=1EA0vO73r<em>KLWr</em>enHSYPtIOms_6SbK0P" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: Sem um botão "Voltar" a operação de sair da mensagem mostrada e voltar ao menu anterior fica dificultada.
+O usuário pode ainda se confundir com o botão "Sair" achando que vai sair da tela da mensagem par ao menu principal e acabar selecionando essa opção, o que irá fechar o sistema.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_27]</em> Problema 27: Botão "Voltar" não "volta" corretamente.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Acompanhar requerimentos processados.</em></p>
+
+<p>A mensagem de erro está incorreta já que no menu anterior foi feita a escolha de visualizar tal relatório.
+Se o relatório está disponível em outro menu por que não pode ser mostrado quando for selecionado no menu corrente?.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1OWjS-yIuCC2HTjbXhv3IrYBt1npsOCPa.png" alt="https://drive.google.com/open?id=1OWjS-yIuCC2HTjbXhv3IrYBt1npsOCPa" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1P8hZq-kKMXjUxHkiMz14EpfNfcgXtg7h.png" alt="https://drive.google.com/open?id=1P8hZq-kKMXjUxHkiMz14EpfNfcgXtg7h" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1kCYp-RQETozpf02wBhGGSiQv1XeD__WJ.png" alt="https://drive.google.com/open?id=1kCYp-RQETozpf02wBhGGSiQv1XeD__WJ" /></p>
+
+<h2>Comentários</h2>
+
+<p>Acredito que a mensagem correta seria exibir o relatório na página atual afinal, segundo o sistema ele está disponível, mas em outra parte do sistema - se o usuário já fez todo o percurso até aquela tela por que obrigá-lo a voltar?.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: O sistema está inconsistente com o mundo real pois estou acessando uma página com relatórios, posso escolher o relatório que quero ter acesso na lista mas este não está disponível no menu em questão, tem um menu próprio.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_28]</em> Problema 28: Mensagem sem sentido no contexto.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Relatório Final de Matrícula.</em></p>
+
+<p>O sistema mostra uma mensagem de  “Campos Obrigatórios” mesmo sem haver qualquer campo que possa ser preenchido.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1Jw9xGvEBQc5WsShRCgSlJqOtk52ck6uT.png" alt="https://drive.google.com/open?id=1Jw9xGvEBQc5WsShRCgSlJqOtk52ck6uT" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A informação não tem utilidade e só adiciona conteúdo inútil à carga visual do usuário.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_29]</em> Problema 29: Coluna sem valor em PDF.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Geração do "Relatório Final de Matrícula".</em></p>
+
+<p>Ao gerar um relatório de matrícula  existe uma coluna "Mensagem" sem qualquer valor dentro, a visualização seria melhorada se ela fosse removida para os usuários em que não tem valor algum.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1pS8QKhL4qkhM10qMK661LRL7yHa1kmmb.png" alt="https://drive.google.com/open?id=1pS8QKhL4qkhM10qMK661LRL7yHa1kmmb" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1vHm6nAjfMzW_M06ysKiEgR3a-YvXun-7.png" alt="https://drive.google.com/open?id=1vHm6nAjfMzW_M06ysKiEgR3a-YvXun-7" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1HWBveeM5tKmRZTQEevyu7CV1iqmWV9xJ.png" alt="https://drive.google.com/open?id=1HWBveeM5tKmRZTQEevyu7CV1iqmWV9xJ" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A coluna sem dados "rouba" espaço das outras dificultando ao usuário a visualização das informações.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_30]</em> Problema 30: Falta do botão "Voltar".</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Relatório Final de Matrícula  &gt; Férias / Recuperação.</em></p>
+
+<p>Ao consultar modalidades onde não existem relatórios a única operação disponível é o botão "Sair", deveria haver um botão "Voltar". Sair deixa em dúvida se estou “saindo desta tela do sistema” ou “saindo do sistema”.
+Isso é válido para os campos Férias e Recuperação.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1cuPIpmdvvR2efzRPqZ-gYaBX76vc4WTW.png" alt="https://drive.google.com/open?id=1cuPIpmdvvR2efzRPqZ-gYaBX76vc4WTW" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1IS4gUaH9SXkAxEMoNG0Y2bviIYXAex-S.png" alt="https://drive.google.com/open?id=1IS4gUaH9SXkAxEMoNG0Y2bviIYXAex-S" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: O usuário perde liberdade ao não ter a opção de voltar.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_31]</em> Problema 31: Erro confuso.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular.</em></p>
+
+<p>Algumas vezes ao tentar visualizar a integração curricular um erro surge.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_17SoCiXjdKqr9HJmGx67U8FNo-zyWatjA.png" alt="https://drive.google.com/open?id=17SoCiXjdKqr9HJmGx67U8FNo-zyWatjA" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1bRtxgb2Gp-h-T9p2t9QoeaZJtWPw-l4s.png" alt="https://drive.google.com/open?id=1bRtxgb2Gp-h-T9p2t9QoeaZJtWPw-l4s" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 9ª</h3>
+
+<p><strong>Heurística ferida</strong>: 9 - Auxiliar usuários a reconhecer, diagnosticar e recuperar ações erradas</p>
+
+<p><strong>Justificativa</strong>: A mensagem de erro não foi clara, usa termos técnicos e mensagens de erro não formatadas e não diz o que fazer para resolver o erro.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_32]</em> Problema 32: Falta do botão voltar</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Erro em Integralização Curricular</em></p>
+
+<p>A mensagem de erro mostrada tem apenas o botão que sai do sistema, mas é natural de qualquer usuário querer voltar para a página anterior quando um erro ocorre.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1w5Pup1dSXeNtc1HV23IVC9AySoJXJwdr.png" alt="https://drive.google.com/open?id=1w5Pup1dSXeNtc1HV23IVC9AySoJXJwdr" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: Usuários perdem a liberdade pois não podem voltar ao sistema após lidar com um erro.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_33]</em> Problema 33: Erro de codificação de caracteres.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular.</em></p>
+
+<p>Ao acessar a página "Integralização Curricular" o conteúdo gerado tem vários problemas de codificação de caracteres o que faz os caracteres errados aparecerem no texto.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1j11ermi0PSoU7xHbO_VS1TZCwkwaUXsw.png" alt="https://drive.google.com/open?id=1j11ermi0PSoU7xHbO_VS1TZCwkwaUXsw" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1TaRndVfZjtTs38wWJyd2-6YLkG502wlg.png" alt="https://drive.google.com/open?id=1TaRndVfZjtTs38wWJyd2-6YLkG502wlg" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: O fato do texto estar com caracteres trocados dificulta que o usuário interprete a informação na tela e se o usuário não consegue entender a informação ela não é de utilidade para ele.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_34]</em> Problema 34: Botões com design diferente.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular.</em></p>
+
+<p>Os botões "Imprimir" e "Voltar" tem tamanhos, cores, comportamentos, ... diferentes, diminuindo a consistência do sistema.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1j8_TBaJ3nVPgfgMrOeREnoL8ZMyr88kb.png" alt="https://drive.google.com/open?id=1j8_TBaJ3nVPgfgMrOeREnoL8ZMyr88kb" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: O sistema é inconsistente pois os botões deveriam seguir um mesmo padrão.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_35]</em> Problema 35: Mensagem de sucesso é igual a de erro.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular &gt; Solicitar Histórico Atualizado &gt; Confirmar.</em></p>
+
+<p>Na página em questão uma mensagem de que a operação foi realizada com sucesso tem exatamente o mesmo design que uma mensagem de erro, o que pode confundir o usuário, a primeira vista é fácil dizer que houve algo de errado.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1lks81Oh9TsEE2nKRJzu_BatMmtj4Krlm.png" alt="https://drive.google.com/open?id=1lks81Oh9TsEE2nKRJzu_BatMmtj4Krlm" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1HtCDrfJjKMVmzZav9cql-NcvxXAADgZO.png" alt="https://drive.google.com/open?id=1HtCDrfJjKMVmzZav9cql-NcvxXAADgZO" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: O sistema está inconsistente pois mensagens com o mesmo visual querem dizer coisas diferentes.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_36]</em> Problema 36: Mensagens de erro com design inconsistente.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Todo o sistema de "Serviços Acadêmicos".</em></p>
+
+<p>Existem diferentes estilos de mensagens para mostrar que houve algo de errado no sistema.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_12lUjBvxTPWtUov3v3fY15iiIdXwDFE6a.png" alt="https://drive.google.com/open?id=12lUjBvxTPWtUov3v3fY15iiIdXwDFE6a" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1FEYXEAynESh6ZrAnGK76ynXA6915AWcL.png" alt="https://drive.google.com/open?id=1FEYXEAynESh6ZrAnGK76ynXA6915AWcL" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1s7uiDtjDLTPWMDrD2wlAiqSFXE2BChrE.png" alt="https://drive.google.com/open?id=1s7uiDtjDLTPWMDrD2wlAiqSFXE2BChrE" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1nCqgJjEWkfhMJ9PthuxBPSYrYZgk7X0U.png" alt="https://drive.google.com/open?id=1nCqgJjEWkfhMJ9PthuxBPSYrYZgk7X0U" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: Como um padrão para as mensagens de erro não é seguido a heurística é adequada.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_ANDR_37]</em> Problema 37: Botão não deveria estar ativo.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Atestado de Matrícula.</em></p>
+
+<p>É possível tentar acessar um "Atestado de Matrícula" mesmo que não haja arquivo para visualizar, o sistema deveria desabilitar a opção nesses casos. Clicar no botão gera um erro.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1RkmjPccuRS8ik-HLpuQQxqFUmDvczywg.png" alt="https://drive.google.com/open?id=1RkmjPccuRS8ik-HLpuQQxqFUmDvczywg" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1vlvheqGscfVhtd653lgzppAebHc2f-LB.png" alt="https://drive.google.com/open?id=1vlvheqGscfVhtd653lgzppAebHc2f-LB" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1KlbbNQZ5fWLmX2UzB6YSv4yBeZ3H3Jzx.png" alt="https://drive.google.com/open?id=1KlbbNQZ5fWLmX2UzB6YSv4yBeZ3H3Jzx" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 5ª</h3>
+
+<p><strong>Heurística ferida</strong>: 5 - Prevenção de erro</p>
+
+<p><strong>Justificativa</strong>: Como já é sabido que não há arquivo a abrir e que tentar acessar relatórios inexistentes causa um erro os desenvolvedores não preveniram que o usuário causasse esse erro pois o botão está habilitado mesmo que não haja relatório a visualizar.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_38]</em> Problema 38: Mensagem de erro confusa.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Atestado de Matrícula.</em></p>
+
+<p>É possível tentar acessar um "Atestado de Matrícula" mesmo que não haja arquivo para visualizar, a mensagem de erro não é clara já que diz que o arquivo é inválido sendo que não existe arquivo.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1HK98LnHLLh6fWp_pNrHRjvZnxYVfxOqX.png" alt="https://drive.google.com/open?id=1HK98LnHLLh6fWp_pNrHRjvZnxYVfxOqX" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 9ª</h3>
+
+<p><strong>Heurística ferida</strong>: 9 - Auxiliar usuários a reconhecer, diagnosticar e recuperar ações erradas</p>
+
+<p><strong>Justificativa</strong>: A mensagem de erro não ajuda o usuário a diagnosticar o que ocorreu.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_39]</em> Problema 39: Títulos repetidos.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Todos os itens em "Serviços Acadêmicos".</em></p>
+
+<p>As páginas em "Serviços Acadêmicos" tem dois campos com o mesmo título.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1-EF1fxwqKGbaXJrjNfYSKxeOEdrzCQCp.png" alt="https://drive.google.com/open?id=1-EF1fxwqKGbaXJrjNfYSKxeOEdrzCQCp" /></p>
+
+<p><img src="../../imgs/ANDRÉ_11G-RyWW4y10beG8AR0wBHc6O0I6kE4SD.png" alt="https://drive.google.com/open?id=11G-RyWW4y10beG8AR0wBHc6O0I6kE4SD" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A presença de dois títulos apenas sobrecarrega a memória visual do usuário.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_ANDR_40]</em> Problema 40: Página de busca confusa.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Programas de Intercâmbio.</em></p>
+
+<p>A página é confusa, faltam explicações.
+Estou buscando estágios em faculdades?
+Como vou saber de antemão as cidades/universidades que têm os programas? Preciso pesquisar uma a uma? Se sim, não poderia haver uma lista apenas com as cidades/faculdades cadastradas?.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/ANDRÉ_1FQxz0q9YDTFP8PVj3CAaClqfbL1Nd5zl.png" alt="https://drive.google.com/open?id=1FQxz0q9YDTFP8PVj3CAaClqfbL1Nd5zl" /></p>
+
+<p><img src="../../imgs/ANDRÉ_1u7FMxQqCagyo_6Kkx-fq2rTtjIRRaMBB.png" alt="https://drive.google.com/open?id=1u7FMxQqCagyo_6Kkx-fq2rTtjIRRaMBB" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: No mundo real uma situação como essa não seria representada como foi no sistema.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="br"><head>    <meta charset="UTF-8">    <title>Title</title>    <style>        *{            font-family: "Open Sans", Calibri, SansSerif, sans-serif;        }        p{            text-align: justify;        }        img{            border: solid 1px #000000;            display: block;            margin-left: auto;            margin-right: auto;            width: 90%;        }    </style></head><body>
+<h1>Serviços Acadêmicos</h1>
+
+<h2><em>id:[SRVACAD_GRUP_4]</em> Problema 4: Problemas de Processamento</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Login do usuário, ao clicar em "acessar"</em></p>
+
+<p>Ao tentar logar utilizando caracteres do tipo emoji (não permitidos pelo sistema, entretanto, a informação não é explicitada) o sistema encaminha o usuário para um erro de processamento com uma mensagem contendo trechos de código SQL.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1O0c6hzbqEOSK4yfSvRpr6Bi_y5x6CH0x.png" alt="https://drive.google.com/open?id=1O0c6hzbqEOSK4yfSvRpr6Bi_y5x6CH0x" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é grave, pois o usuário não consegue ter acesso a uma parte fundamental do sistema, por esse motivo é de suma importância a rápida resolução.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 9ª</h3>
+
+<p><strong>Heurística ferida</strong>: 9 - Auxiliar usuários a reconhecer, diagnosticar e recuperar ações erradas</p>
+
+<p><strong>Justificativa</strong>: A heurística aplicada ao problema é a 9, pois em nenhum momento foi dito como o usuário poderia resolver o problema, apenas é solicitado que ele copie o código SQL e envie à DAC. O usuário não tem entendimento do tipo de problema cometido, e como ele poderia ser facilmente resolvido.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 5 - Catastrófico (Muito grave, deve ser reparado de qualquer forma -)</p>
+
+<h2><em>id:[SRVACAD_GRUP_5]</em> Problema 5: Carregamento da página</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao clicar em "cursos regulares" no tópico REQUERIMENTO DE MATRÍCULA</em></p>
+
+<p>A página que aparece está apenas em modo texto, a pagina não é carregada. Além disso, apresenta caracteres fora do padrão utf8.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1RZIfWJnIpO1YVtNeDsPPWGgJKrOoznt8.png" alt="https://drive.google.com/open?id=1RZIfWJnIpO1YVtNeDsPPWGgJKrOoznt8" /></p>
+
+<h2>Comentários</h2>
+
+<p>Grau de severidade é 2, pois não é um problema grave, apesar de não condizer com a linguagem por meio da qual o usuário esta acostumado, ainda assim é possível extrair algumas informações da página.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: A página apresenta conteúdo que não é coerente com o conhecimento do usuário leigo, não faz parte do que ele está habituado a encontrar. Não faz parte da "linguagem" do usuário.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_6]</em> Problema 6: Falta de verificação de campos</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao tentar redirecionar o e-mail da DAC</em></p>
+
+<p>O usuário pode digitar combinações de caracteres que não condizem com um endereço de e-mail válido. Não há verificação se o usuário realmente digitou um e-mail ou caracteres aleatórios, como o exemplo da imagem.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1knwfBLJO2jTwsIbFq5LoCxtHwZm6U6po.png" alt="https://drive.google.com/open?id=1knwfBLJO2jTwsIbFq5LoCxtHwZm6U6po" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é máximo, pois o usuário pode não receber mais e-mails da DAC, por conta de uma redirecionamento indevido.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 5ª</h3>
+
+<p><strong>Heurística ferida</strong>: 5 - Prevenção de erro</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 5, pois os desenvolvedores não pensaram em formas de circuncidar o sistema para que o usuário não pudesse inserir endereços de e-mail inválidos.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 5 - Catastrófico (Muito grave, deve ser reparado de qualquer forma -)</p>
+
+<h2><em>id:[SRVACAD_GRUP_7]</em> Problema 7: Falta de botão na interface</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ocorre na Desistência de Matrícula</em></p>
+
+<p>O usuário não tem a opção de Voltar, já que o botão não existe. Ele pode apenas sair do sistema, não garantindo que a ação foi desfeita.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1O0G0a-oFC3-tcR_S8SAITlL_LxZBdUrt.png" alt="https://drive.google.com/open?id=1O0G0a-oFC3-tcR<em>S8SAITlL</em>LxZBdUrt" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é 3, ou seja, é necessário corrigir esse problema, pois caso o usuário não consiga retornar a um menu anterior, e seja obrigado a sair do sistema, o mesmo pode perder informações não-salvas.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 3, pois o usuário é impedido de voltar à página anterior, desfazendo uma ação, por conta da falta de um botão voltar.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_9]</em> Problema 9: Problema de Codificação de caracteres</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular</em></p>
+
+<p>Problema com a codificação dos caracteres especiais.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1OE_BL1MHjrxycAOCTUWf5mpW69XO1GqC.png" alt="https://drive.google.com/open?id=1OE_BL1MHjrxycAOCTUWf5mpW69XO1GqC" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: Usuário não é capaz de identificar que é um problema de codificação para caracteres especiais portanto não é capaz de entender a informação escrita.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_28]</em> Problema 28: Falha de segurança ao usar navegador.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Após o login.</em></p>
+
+<p>Ao fazer o login no sistema é mostrada uma mensagem dizendo que dependendo do navegador utilizado e de sua versão o usuário corre riscos relacionados com a segurança. 
+O teste foi feito em um navegador fora da lista e a ferramenta funcionou normalmente, aparentemente é aceitável que os usuários do sistema corram riscos de segurança.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_12aySqRu-gGf9jVow_c7lnUWr2rf-3jZ6.png" alt="https://drive.google.com/open?id=12aySqRu-gGf9jVow_c7lnUWr2rf-3jZ6" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: O sistema funciona normalmente em um navegador que não é recomendado, é dito que são problemas de segurança - mas a mensagem é mostrada após o usuário inserir seus dados em um navegador dito inseguro e fazer o login. 
+Isso pode causar medo em alguns usuários ou dúvidas se precisam ou não utilizar os navegadores ditos já que o sistema funciona normalmente em um outro navegador.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_29]</em> Problema 29: Funções estão em outro sistema.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Após fazer o login na ferramenta.</em></p>
+
+<p>É exibida uma mensagem dizendo que para fazer certas alterações de dados existe um novo sistema. Não é esclarecido se tais funções continuam no sistema atual, além disso, essa mensagem poderia aparecer antes do usuário efetuar o login já que ele é obrigado a se autenticar para então descobrir que terá que sair do sistema para acessar outro.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1BG4NLRn1rOMCM_WPBJk8NODpo_7tjxb-.png" alt="https://drive.google.com/open?id=1BG4NLRn1rOMCM<em>WPBJk8NODpo</em>7tjxb-" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: Não existe lógica nas ações ao requerer que um usuário já tenha feito o login para mostrar que as opções que quer podem não estar mais no portal que ele conhece.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_30]</em> Problema 30: Opções de pós-graduação para aluno da graduação apenas.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Pós-graduação.</em></p>
+
+<p>Mesmo logado como aluno que cursa apenas Graduação o sistema mostra botões clicáveis indicando que poderia acessar opções que não correspondem com o perfil do usuário. .</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_146lb6TTR3bVI6MXscRo-dalH5rqIRbhv.png" alt="https://drive.google.com/open?id=146lb6TTR3bVI6MXscRo-dalH5rqIRbhv" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: A heurística violada é a 2, pois um aluno de graduação não deve ter acesso à informações de pós-graduação. Não faz parte da "realidade" dele.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_31]</em> Problema 31: Mensagem sem sentido no contexto.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Relatório Final de Matrícula.</em></p>
+
+<p>O sistema mostra uma mensagem de  “campos obrigatórios” mesmo sem haver qualquer campo que possa ser preenchido.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1Jw9xGvEBQc5WsShRCgSlJqOtk52ck6uT.png" alt="https://drive.google.com/open?id=1Jw9xGvEBQc5WsShRCgSlJqOtk52ck6uT" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A informação não tem utilidade e só adiciona conteúdo inútil à carga visual do usuário.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_GRUP_32]</em> Problema 32: Botões com design diferente.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular.</em></p>
+
+<p>Os botões imprimir e voltar tem tamanhos, cores, comportamentos, ... diferentes, diminuindo a consistência do sistema.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/GRUPO_1j8_TBaJ3nVPgfgMrOeREnoL8ZMyr88kb.png" alt="https://drive.google.com/open?id=1j8_TBaJ3nVPgfgMrOeREnoL8ZMyr88kb" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 4ª</h3>
+
+<p><strong>Heurística ferida</strong>: 4 - Consistência e padrões</p>
+
+<p><strong>Justificativa</strong>: O sistema é inconsistente pois os botões deveriam seguir um mesmo padrão.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+</body>
+</html>

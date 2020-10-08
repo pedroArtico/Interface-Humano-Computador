@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="br"><head>    <meta charset="UTF-8">    <title>Title</title>    <style>        *{            font-family: "Open Sans", Calibri, SansSerif, sans-serif;        }        p{            text-align: justify;        }        img{            border: solid 1px #000000;            display: block;            margin-left: auto;            margin-right: auto;            width: 90%;        }    </style></head><body>
+<h1>Serviços Acadêmicos</h1>
+
+<h2><em>id:[SRVACAD_PEDR_1]</em> Problema 1: Problemas de Processamento.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Login do usuário, ao clicar em "Acessar".</em></p>
+
+<p>Ao tentar logar utilizando caracteres do tipo emoji (não permitidos pelo sistema, entretanto, a informação não é explicitada) o sistema encaminha o usuário para um erro de processamento com uma mensagem contendo trechos de código SQL.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1O0c6hzbqEOSK4yfSvRpr6Bi_y5x6CH0x.png" alt="https://drive.google.com/open?id=1O0c6hzbqEOSK4yfSvRpr6Bi_y5x6CH0x" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é grave, pois o usuário não consegue ter acesso a uma parte fundamental do sistema, por esse motivo é de suma importância a rápida resolução.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 9ª</h3>
+
+<p><strong>Heurística ferida</strong>: 9 - Auxiliar usuários a reconhecer, diagnosticar e recuperar ações erradas</p>
+
+<p><strong>Justificativa</strong>: A heurística aplicada ao problema é a 9, pois em nenhum momento foi dito como o usuário poderia resolver o problema, apenas é solicitado que ele copie o código SQL e envie à DAC. O usuário não tem entendimento do tipo de problema cometido, e como ele poderia ser facilmente resolvido.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_PEDR_2]</em> Problema 2: Carregamento da página.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao clicar em "Cursos Regulares" no tópico "Requerimento de Matrícula".</em></p>
+
+<p>A página que aparece está apenas em modo texto, a pagina não é carregada. Além disso, apresenta caracteres fora do padrão utf8.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1RZIfWJnIpO1YVtNeDsPPWGgJKrOoznt8.png" alt="https://drive.google.com/open?id=1RZIfWJnIpO1YVtNeDsPPWGgJKrOoznt8" /></p>
+
+<h2>Comentários</h2>
+
+<p>Grau de severidade é 2, pois não é um problema grave, apesar de não condizer com a linguagem por meio da qual o usuário esta acostumado, ainda assim é possível extrair algumas informações da página.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: A página apresenta conteúdo que não é coerente com o conhecimento do usuário leigo, não faz parte do que ele está habituado a encontrar. Não faz parte da "linguagem" do usuário.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_PEDR_3]</em> Problema 3: Falta de verificação de campos.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao tentar redirecionar o e-mail da DAC.</em></p>
+
+<p>O usuário pode digitar combinações de caracteres que não condizem com um endereço de e-mail válido. Não há verificação se o usuário realmente digitou um e-mail ou caracteres aleatórios, como o exemplo da imagem.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1knwfBLJO2jTwsIbFq5LoCxtHwZm6U6po.png" alt="https://drive.google.com/open?id=1knwfBLJO2jTwsIbFq5LoCxtHwZm6U6po" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é máximo, pois o usuário pode não receber mais e-mails da DAC, por conta de uma redirecionamento indevido.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 5ª</h3>
+
+<p><strong>Heurística ferida</strong>: 5 - Prevenção de erro</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 5, pois os desenvolvedores não pensaram em formas de circuncidar o sistema para que o usuário não pudesse inserir endereços de e-mail inválidos.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_PEDR_5]</em> Problema 5: Inconsistência no menu.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Menu Principal de Serviços Acadêmicos.</em></p>
+
+<p>A opção CERTIFICADO PED é apresentada na parte de Graduação do Menu Principal, entretanto, um aluno de graduação não pode ser PED.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_15cfCIlW8FVhSaHt8xB_K8B21BPPXjMWG.png" alt="https://drive.google.com/open?id=15cfCIlW8FVhSaHt8xB_K8B21BPPXjMWG" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é baixo, pois não afeta o desempenho do sistema, e possíveis ações erradas do usuário não levariam a erros complexos.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 8, pois o sistema apresenta uma inconsistência de informações acadêmicas na parte de Estudantes (contida no Menu Principal), ou seja, houve uma falha conceitual na diferenciação de botões da graduação e da pós-graduação.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_PEDR_6]</em> Problema 6: Falta de botão na interface.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ocorre na "Desistência de Matrícula".</em></p>
+
+<p>O usuário não tem a opção de Voltar, já que o botão não existe. Ele pode apenas sair do sistema, não garantindo que a ação foi desfeita.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1O0G0a-oFC3-tcR_S8SAITlL_LxZBdUrt.png" alt="https://drive.google.com/open?id=1O0G0a-oFC3-tcR<em>S8SAITlL</em>LxZBdUrt" /></p>
+
+<h2>Comentários</h2>
+
+<p>O grau de severidade é 3, ou seja, é necessário corrigir esse problema, pois caso o usuário não consiga retornar a um menu anterior, e seja obrigado a sair do sistema, o mesmo pode perder informações não-salvas.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 3, pois o usuário é impedido de voltar à página anterior, desfazendo uma ação, por conta da falta de um botão voltar.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_PEDR_7]</em> Problema 7: Inconsistência em "Requerimento de Matricula".</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao submeter login e senha na seção "Requerimento de Matrícula".</em></p>
+
+<p>O relatório de matricula não está no menu anterior, e sim no menu principal/inicial já que no menu anterior estão os campos de login e senha.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1Rij8I3KxQDLHvL0BchI7JNT6ruLv1aUv.png" alt="https://drive.google.com/open?id=1Rij8I3KxQDLHvL0BchI7JNT6ruLv1aUv" /></p>
+
+<h2>Comentários</h2>
+
+<p>Grau de severidade baixo, pode causar certa confusão para o usuário, mas não implicará em erros de sistema.</p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 8ª</h3>
+
+<p><strong>Heurística ferida</strong>: 8 - Estética e design minimalista</p>
+
+<p><strong>Justificativa</strong>: A heurística correta é a 8, pois há informação inútil e incorreta na tela, ao dizer que o relatório está em um menu, quando na realidade esta em outro.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 1 - Sem importância (Não afeta a operação da interface (não é um problema de usabilidade))</p>
+
+<h2><em>id:[SRVACAD_PEDR_8]</em> Problema 8: Falta de botão na interface de "Serviços Acadêmicos".</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao tentar gerar o relatório de matrícula.</em></p>
+
+<p>O usuário não tem a opção de acessar o menu anterior, neste caso em que a busca retornou sem ocorrências. Ele acaba por ser obrigado a sair do sistema e logar novamente.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1HhWVkAV_M5b0UYCPUu6YvRC4xy3wiRwE.png" alt="https://drive.google.com/open?id=1HhWVkAV_M5b0UYCPUu6YvRC4xy3wiRwE" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: O usuário não tem a liberdade de voltar ao menu anterior e refazer a ação. Não pode consultar novamente seu relatório final de matrícula, sem ter que sair do sistema.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+<h2><em>id:[SRVACAD_PEDR_10]</em> Problema 10: Decodificação de caracteres.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Integralização Curricular.</em></p>
+
+<p>Ao clicar em "Integralização Curricular", aparecem varias informações sobre o aluno, entretanto, há erros de codificação de Caracteres UTF-8. O conteúdo está com sentido comprometido.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1pzBGaZ37qE30lMISGowt86ICxLsfBm9_.png" alt="https://drive.google.com/open?id=1pzBGaZ37qE30lMISGowt86ICxLsfBm9_" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 2ª</h3>
+
+<p><strong>Heurística ferida</strong>: 2 - Equivalência entre o sistema e o mundo real</p>
+
+<p><strong>Justificativa</strong>: A informação não é apresentado na mesma linguagem que o usuário está habituado. Não é possível compreender o conteúdo da página.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 4 - Grave (Problema de alta prioridade (deve ser reparado))</p>
+
+<h2><em>id:[SRVACAD_PEDR_42]</em> Problema 42: Página em branco.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao clicar no botão "Confirmar", em PED.</em></p>
+
+<p>O usuário é redirecionado para uma página em branco.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_10xRVG11Wl6msHft6Q94BAKD1ydKP8aGZ.png" alt="https://drive.google.com/open?id=10xRVG11Wl6msHft6Q94BAKD1ydKP8aGZ" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 3ª</h3>
+
+<p><strong>Heurística ferida</strong>: 3 - Liberdade e controle do usuário</p>
+
+<p><strong>Justificativa</strong>: O usuário é estudante de graduação, e tenta emitir um certificado não existente. Ele não tem a opção de voltar a ação.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 3 - Simples (Problema de baixa prioridade (pode ser reparado))</p>
+
+<h2><em>id:[SRVACAD_PEDR_43]</em> Problema 43: Página não encontrada.</h2>
+
+<p><strong>Ocorre na página</strong>: <em>Serviços Acadêmicos &gt; Ao clicar em "Caderno de Horarios da Graduação".</em></p>
+
+<p>O usuário é redirecionado para uma página não encontrada.</p>
+
+<h2>Fotos</h2>
+
+<p><img src="../../imgs/PEDRO_1AYqEyvbHo4eBrMyekl4FfC_eD70JSmLT.png" alt="https://drive.google.com/open?id=1AYqEyvbHo4eBrMyekl4FfC_eD70JSmLT" /></p>
+
+<h2>Considerações</h2>
+
+<h3>Heurística ferida: 0ª</h3>
+
+<p><strong>Heurística ferida</strong>: 0 - A heurística não foi identificada: este tópico não se encaixa em nenhuma das heurísticas ou será discutido posteriormente para a definição de sua heurística</p>
+
+<p><strong>Justificativa</strong>: O usuário não é levado a uma página válida.</p>
+
+<h3>Grau de Serveridade do problema</h3>
+
+<p><strong>Grau de Severidade</strong>: 2 - Cosmético (Não há necessidade imediata de solução)</p>
+
+</body>
+</html>
